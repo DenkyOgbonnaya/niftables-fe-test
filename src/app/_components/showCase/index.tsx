@@ -3,7 +3,7 @@ import NftCard from "../nftCard";
 export default function Showcase() {
   return (
     <section className="bg-black py-[9.75rem]">
-      <div className="container flex gap-10 justify-stretch ">
+      <div className="container  flex-wrap flex gap-10 justify-stretch ">
         {showcaseData.map((showcase) => (
           <NftCard key={showcase.title} {...showcase} />
         ))}

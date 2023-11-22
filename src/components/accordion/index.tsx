@@ -12,11 +12,11 @@ export default function Accordion({ children, icon, title }: AccordionProps) {
   const toggleState = () => {
     setExpanded((e) => !e);
   };
-  const heigh = "500px";
+  
   return (
     <div
       className={` transition-all duration-1000 ease-in-out ${
-        expanded ? `${heigh}` : "h-[9rem]"
+        expanded ? `300px` : " h-[8rem] tablet:h-[9rem]"
       } border-b-[2px]  border-grey pb-[1.88rem]`}
     >
       <h2>
@@ -25,17 +25,17 @@ export default function Accordion({ children, icon, title }: AccordionProps) {
           className="flex  cursor-pointer group items-center justify-between w-full p-5 font-medium rtl:text-right  rounded-t-xl  gap-3"
           onClick={toggleState}
         >
-          <div className="flex items-start gap-[1.88rem]">
+          <div className="flex desktop:items-start gap-[1.88rem]">
             <span
-              className={`transition-colors duration-1000 ease-in-out ${
+              className={`hidden tablet:block transition-colors duration-1000 ease-in-out ${
                 expanded ? "text-white" : "text-transparent"
               }`}
             >
               {icon}
             </span>
-            <div className="flex flex-col gap-[1.75rem]">
+            <div className="flex mt-6 desktop:mt-0 flex-col gap-[1.75rem]">
               <div className="flex items-center justify-between">
-                <span className=" text-[1.375rem] font-body font-bold leading-[1.7875rem] text-white transition-colors duration-1000 ease-in-out group-hover:text-blue">
+                <span className=" text-lg desktop:text-[1.375rem] font-body font-bold leading-[1.4625rem] desktop:leading-[1.7875rem] text-white transition-colors duration-1000 ease-in-out group-hover:text-blue">
                   {title}
                 </span>
                 <span

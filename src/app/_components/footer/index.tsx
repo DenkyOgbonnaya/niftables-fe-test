@@ -3,8 +3,8 @@ import { Discord, Telegram, Twitter } from "@/assets";
 export default function Footer() {
   return (
    
-      <footer className="flex container  h-[5.25rem] justify-between   items-center ">
-        <div className="flex gap-[5.62rem] items-center">
+      <footer className="flex container flex-col tablet:flex-row h-fit   tablet:h-[5.25rem] justify-between   items-center ">
+        <div className="flex  gap-[5.62rem] items-center mb-4 tablet:mb-0">
           <span className=" font-body z-10 font-normal text-base leading-[1.3rem] text-white">
             © Creon 2023. All rights reserved.
           </span>

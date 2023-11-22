@@ -30,10 +30,10 @@
 
 @layer utilities {
   .container {
-    @apply w-full px-4 lg:p-0  max-w-[90rem] mx-auto box-border;
+    @apply w-full px-[1.88rem]   laptop:px-[1.88rem]  max-w-[90rem] mx-auto box-border;
   }
   .text-gradient {
-    background: linear-gradient(to right, #3d8bff, #ab23ff);
+    background: linear-gradient(to right, #3d8bff 10%, #ab23ff 90%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }

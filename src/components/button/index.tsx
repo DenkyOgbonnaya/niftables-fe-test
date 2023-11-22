@@ -7,8 +7,8 @@ const button = cva("flex justify-center  shrink-0 items-center  outline-none bg-
       outline: "border-[2px] border-white",
     },
     size: {
-      sm: "w-[8.25rem] h-[2.75rem] gap-[0.8125rem] ",
-      lg: "w-[28.3125rem] h-[3.375rem] "
+      sm: "w-[8.25rem] h-[2.375rem] desktop:h-[2.75rem] gap-[0.8125rem] ",
+      lg: "h-[3.375rem] "
     },
   },
  
