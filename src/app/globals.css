@@ -30,12 +30,34 @@
 
 @layer utilities {
   .container {
-    @apply w-full px-4 lg:p-0 lg:w-[73.4rem] max-w-[73.4rem] mx-auto;
+    @apply w-full px-4 lg:p-0  max-w-[90rem] mx-auto box-border;
   }
-  .text-highlight {
-    color: linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%);
+  .text-gradient {
+    background: linear-gradient(to right, #3d8bff, #ab23ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   .button {
-    background-color: linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%);
+    background: linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%);
+  }
+  .hero-gradient {
+    background: linear-gradient(
+      175deg,
+      #ab23ff 4.29%,
+      #3d8bff 47.39%,
+      #000 95.05%
+    );
+    mix-blend-mode: soft-light;
+  }
+  .bg-gradient {
+    background: linear-gradient(
+      175deg,
+      rgba(171, 35, 255, 1) 4.29%,
+      rgba(61, 139, 255, 1) 47.39%,
+      rgba(0, 0, 0, 1) 95.05%
+    );
+  }
+  .divider {
+    @apply w-full h-[0.0625rem] bg-grey;
   }
 }
