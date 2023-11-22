@@ -61,7 +61,7 @@ export default function CreonPass() {
               </p>
             </div>
           </div>
-          <Button className=" mt-[0.6] laptop:mt-[2.62rem] w-full tablet:w-1/2 laptop:w-full">Buy Creon Pass</Button>
+          <Button className=" mt-[0.6] laptop:mt-[2.62rem] w-full tablet:w-1/2 laptop:w-[80%]">Buy Creon Pass</Button>
         </div>
         <div className="flex-1">
           <video
