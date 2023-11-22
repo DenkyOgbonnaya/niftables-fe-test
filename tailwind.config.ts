@@ -11,6 +11,11 @@ module.exports = {
       colors: {
         white: "#FFF",
         grey: "#13171D",
+        purple: "#AB23FF",
+        primary: "#3D8BFF",
+        secondary: "#AB23FF",
+        blue: "#3D8BFF",
+        blacK: "#000"
       },
       fontSize: {
         xs: [
